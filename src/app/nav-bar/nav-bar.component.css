@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.imagenArbol{
+    width: 50px;
+    height: 50px;
+}
+
+.image-with-text {
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Para limpiar el float */
+  }
+  
+  .image {
+    width: 50%;
+    float: left;
+  }
+  
+  .text {
+    width: 50%;
+    float: left;
+    padding-left: 20px; /* Para agregar un poco de espacio entre la imagen y el texto */
+  }
+    
+  h5{
+    color: green;
+  }
+  body{
+background-color: #7c9885;  
+}
+
+.dropdown-item{
+   padding-top: 20px;
+ font-size: 14px;
+  width: 10px;
+}
+
+nav{
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* Otros estilos opcionales */
+  background-color: #ffffff;
+  z-index: 9999;
+}
+ 
+
+@media (min-width: 768px){
+
+}
+
+@media (max-width: 767px){
+  li{
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-align: center;
+  }
+}

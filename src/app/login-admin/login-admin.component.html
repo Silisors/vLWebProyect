@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body class="bodyDeFront">
+  <form >
+  <div class="container">
+    <div class="contenedorLogin">
+      <div class="card">
+        <div class="textos" >
+          <!-- routerLink="inicio" -->
+          <p>
+            <input type="text" placeholder="Email address" id="nombre" name="email"
+              [(ngModel)]="email" 
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+              (input)="validateEmail()">
+          </p>
+          <div *ngIf="invalidEmail" style="color:red">
+            El correo electrónico ingresado es inválido.
+          </div>
+          <p><input type="password" placeholder="Enter your password" id="name" name="password" [(ngModel)]="password" ></p>
+          <div>            
+            <div><button routerLink="adminPanel" (click)="onLogin()" class="buttonLogin2" ><i class="fa-solid fa-right-to-bracket"></i>  Login</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</form>
+</body>
+<script src="https://kit.fontawesome.com/c0bafba6a3.js" crossorigin="anonymous"></script>
+</html>

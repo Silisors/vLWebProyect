@@ -1,0 +1,53 @@
+h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 10vh; */
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+}
+
+.about-us {
+    background-color: white;
+  }
+  
+  h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  body{
+    background-color: white;
+  }
+ 
+  i{
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+hr{
+  background-color: white;
+}  
+/* Para pantallas de hasta 480 píxeles de ancho (celulares) */
+@media only screen and (max-width: 480px) {
+  /* Aquí van las reglas de estilo para pantallas de hasta 480 píxeles de ancho */
+}
+
+/* Para pantallas de hasta 1200 píxeles de ancho (laptops) */
+@media only screen and (min-width: 481px) and (max-width: 1200px) {
+  /* Aquí van las reglas de estilo para pantallas de hasta 1200 píxeles de ancho */
+}
+
+/* Para pantallas de más de 1200 píxeles de ancho (monitores grandes) */
+@media only screen and (min-width: 1201px) {
+  /* Aquí van las reglas de estilo para pantallas de más de 1200 píxeles de ancho */
+}
+

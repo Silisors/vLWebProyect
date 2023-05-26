@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<app-nav-bar></app-nav-bar>
+<body>  <div class="contenedor">
+    <div class="card-content">
+      <div class="cartas">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://yardzen.com/wp-content/uploads/2022/05/z14cffyXpIPwdEJiYDtDPofaCts2.b1a3f39a-4331-4b16-814f-669aff3b99d8.1630506373201-1024x576.jpg" alt="Descripción de la imagen">
+          </div>
+          <div class="card-content">
+            <h3><strong>Full Yard</strong></h3>
+            <p><strong>Redesign the landscaping and more for your entire property</strong></p>
+              <!-- <app-botones-price [startingPrice]="1505" routerLink="proyecto1" routerLinkActive="proyecto1"></app-botones-price>               -->
+              <button class="btn btn-outline-secondary" routerLink="/full-yard">
+                  Starting at 1500$
+                </button>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="card-content">
+      <div class="cartas">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://images.squarespace-cdn.com/content/v1/56d85d398a65e25067c63755/1531480059431-PHA6JOS53J82P93A221H/Screen+Shot+2018-07-13+at+14.02.51.png?format=1500w" alt="Descripción de la imagen">
+          </div>
+          <div class="card-content">
+            <h3><strong>BackYard</strong></h3>
+            <p><strong>Redesign the landscaping and more for your entire property</strong></p>
+              <!-- <button type="button" class="btn btn-outline-secondary">Starting at $500</button> -->
+              <!-- <button class="btn btn-outline-secondary" (mouseover)="changeText()" (mouseout)="changeTextBack()" routerLink="">
+                {{ buttonText }}
+              </button> -->
+              <button class="btn btn-outline-secondary" routerLink="/full-yard2">
+                Starting at 750$
+              </button>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="card-content">
+      <div class="cartas">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiCiy5RRqppOIkt-mLDdZJPR2YigfrXLaM-RLfmSTcVzSA-wdSWPUJ5EoTfVL12f6LO1A&usqp=CAU" alt="Descripción de la imagen">
+          </div>
+          <div class="card-content">
+            <h3><strong>Small Space </strong></h3>
+            <p><strong>Redesign the landscaping and more for your entire property</strong></p>
+              <!-- <button type="button" class="btn btn-outline-secondary">Starting at $500</button> -->
+              <!-- <button class="btn btn-outline-secondary" (mouseover)="changeText()" (mouseout)="changeTextBack()" routerLink="">
+                {{ buttonText }}
+              </button> -->
+              <button class="btn btn-outline-secondary" routerLink="/full-yard3">
+              Starting at 950$
+              </button>
+              
+            </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="card-content">
+      <div class="cartas">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnOol4oMZ5MnDubmS6UJvgOeihWeOniEMNdvMqQFHL_rnDR1hUYz2ci5lMP136Fv_Pxc&usqp=CAU" alt="Descripción de la imagen">
+          </div>
+          <div class="card-content">
+            <h3><strong>Front Yard</strong></h3>
+            <p><strong>Redesign the landscaping and more for your entire property</strong></p>
+              <!-- <button type="button" class="btn btn-outline-secondary">Starting at $500</button> -->
+              <!-- <button class="btn btn-outline-secondary" (mouseover)="changeText()" (mouseout)="changeTextBack()" routerLink="">
+                {{ buttonText }}
+              </button> -->
+              <button class="btn btn-outline-secondary" routerLink="/full-yard4">
+              Starting at 1505$
+              </button>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="card-content">
+      <div class="cartas">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://coloradosprings.momcollective.com/wp-content/uploads/2020/04/yard.png" alt="Descripción de la imagen">
+          </div>
+          <div class="card-content">
+            <h3><strong>Curb Appeal </strong></h3>
+            <p><strong>Redesign the landscaping and more for your entire property</strong></p>
+              <!-- <button type="button" class="btn btn-outline-secondary">Starting at $500</button> -->
+              <!-- <button class="btn btn-outline-secondary" (mouseover)="changeText()" (mouseout)="changeTextBack()" routerLink="">
+                {{ buttonText }}
+              </button> -->
+              <button class="btn btn-outline-secondary" routerLink="/full-yard5">
+
+              Starting at 1505$
+              </button>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="card-content">
+      <div class="cartas">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/front-yard-landscaping-section-1.jpg" alt="Descripción de la imagen">
+          </div>
+          <div class="card-content">
+            <h3><strong>Outdoor Transformation</strong></h3>
+            <p><strong>Redesign the landscaping and more for your entire property</strong></p>
+              <!-- <button type="button" class="btn btn-outline-secondary">Starting at $500</button> -->
+              <!-- <button class="btn btn-outline-secondary" (mouseover)="changeText()" (mouseout)="changeTextBack()" routerLink="">
+                {{ buttonText }}
+              </button> -->
+              <button class="btn btn-outline-secondary" routerLink="/full-yard6">
+              Starting at 1505$
+              </button>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="card-content">
+      <div class="cartas">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://diy.sndimg.com/content/dam/images/diy/fullset/2013/3/6/0/CI-Bruce-Clodfelter-Associates_front-yard-stepping-house-traditional-home_s4x3.jpg.rend.hgtvcom.966.725.suffix/1420859560313.jpeg" alt="Descripción de la imagen">
+          </div>
+          <div class="card-content">
+            <h3><strong>Botanical Design</strong></h3>
+            <p><strong>Redesign the landscaping and more for your entire property</strong></p>
+              <!-- <button type="button" class="btn btn-outline-secondary">Starting at $500</button> -->
+              <!-- <button class="btn btn-outline-secondary" (mouseover)="changeText()" (mouseout)="changeTextBack()" routerLink="">
+                {{ buttonText }}
+              </button> -->
+              <button class="btn btn-outline-secondary" routerLink="/full-yard7">
+              Starting at 1505$
+              </button>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="card-content">
+      <div class="cartas">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2017/1/26/0/OA17-J-Dabney-Peeples-Design-Assoc_Twilight-Garden_2.jpg.rend.hgtvcom.616.411.suffix/1485455803767.jpeg" alt="Descripción de la imagen">
+          </div>
+          <div class="card-content">
+            <h3><strong>Yardzen Premium</strong></h3>
+            <p><strong>Redesign the landscaping and more for your entire property</strong></p>
+              <!-- <button type="button" class="btn btn-outline-secondary">Starting at $500</button> -->
+              <!-- <button class="btn btn-outline-secondary" (mouseover)="changeText()" (mouseout)="changeTextBack()" routerLink="">
+                {{ buttonText }}
+              </button> -->
+              <button class="btn btn-outline-secondary" routerLink="/full-yard8">
+              Starting at 1505$
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<app-footer></app-footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+card general
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+  height: 400px;
+  }
+  
+  .card:hover .card-image img {
+  transform: scale(1.1);
+  }
+  
+  /* imagen de la card */
+  .card-image {
+  overflow: hidden;
+  position: relative;
+  }
+  
+  .card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  }
+  
+  /* contenido de la card */
+  .card-content {
+  padding: 15px;
+  }
+  
+  .card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  }
+  
+  img {
+  }
+  
+  .card a:hover {
+  background-color: #0062cc;
+  }
+  
+  /* botón genérico */
+  button {
+  display: block;
+  padding: 0.5rem 1rem;
+  width: 200px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  }
+  
+  p {
+  padding-top: 10px;
+  }
+  
+  /* contenedor para todas las cards */
+  .contenedor {
+  display: grid;
+  grid-gap: 20px;
+  }
+  
+  /* celular */
+  @media screen and (max-width: 767px) {
+  .contenedor {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  }
+  }
+  
+  /* portátiles y tablets */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contenedor {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  }
+  }
+  
+  /* pantallas grandes */
+  @media screen and (min-width: 1024px) {
+  .contenedor {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  }
+  h3 {
+  padding-left: 1px;
+  padding-bottom: 7px;
+  justify-content: center;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  
+}
+
+article a:focus {
+  outline: 1px dotted ;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: ;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+/************************ 
+Generic layout (demo looks)
+**************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 50px;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  min-height: 50vh;
+}
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+  
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+article{
+  background-color: whitesmoke ;
+}
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+body{
+  padding-bottom: 1px;
+}
+.btn-success {
+  margin: 10px;
+}
+
+.btn-success.mobile {
+  display: block;
+  margin: 10px auto;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+
+  

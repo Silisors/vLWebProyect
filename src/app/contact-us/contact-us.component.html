@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <title>Contáctenos - Stripe</title>
+</head>
+<nav><app-nav-bar></app-nav-bar></nav>
+
+<body>
+    <header>
+    </header>
+    <main class="container my-4">
+      <hr>
+    
+      <section>
+        <h2>Contact Form</h2>
+        <form class="row g-3 needs-validation" novalidate [class.was-validated]="formData">
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your full name"
+              [(ngModel)]="formData.fullName" name="fullName" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Email</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" placeholder="Enter your Email"
+                [(ngModel)]="formData.email" name="email" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" [(ngModel)]="formData.state" name="state" required>
+              <option selected disabled value="">Choose...</option>
+              <option>Sacramento</option>
+              <option>West Sacramento</option>
+              <option>Roseville</option>
+              <option>Folsom</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" placeholder="Enter your zip code"
+              [(ngModel)]="formData.zip" name="zip" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button (click)="guardarDatos()" class="btn btn-success" type="submit">Submit form</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    
+    <hr>
+    
+    <app-footer></app-footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+
+@media (min-width: 768px){
+    button{
+      left: 190px;
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+    .app-carousel2{
+      padding-top: 100px;
+    }
+  }
+  
+  @media (max-width: 767px){
+    button{
+      left: 100px;
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+  }
+  .h222{
+    color: green;
+    padding-left:90px;
+  }

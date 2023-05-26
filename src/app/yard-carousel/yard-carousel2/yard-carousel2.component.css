@@ -1,0 +1,23 @@
+
+@media (min-width: 768px){
+    button{
+      left: 120px;
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+    #carousel{
+      height: 500px;
+    }
+  }
+  
+  @media (max-width: 767px){
+    button{
+      left: 100px;
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+  }
+  .h222{
+    color: green;
+    padding-left:90px;
+  }
