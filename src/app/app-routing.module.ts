@@ -14,6 +14,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminComponentComponent } from './admin-component/admin-component.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AuthGuard } from './auth.guard';
 
 
 
@@ -29,8 +30,8 @@ const routes: Routes = [
   { path: 'full-yard7', component: YardComponent7Component},
   { path: 'full-yard8', component: YardComponent8Component},
   { path: 'contact-Us', component: ContactUsComponent},
-  { path: 'adminPanel', component: AdminComponentComponent},
-  { path: 'LoginadminPanel', component: LoginAdminComponent},
+  { path: 'adminPanel', component: AdminComponentComponent, canActivate: [AuthGuard] },
+  { path: 'LoginadminPanel', component: LoginAdminComponent },
   { path: 'not-found', component: NotFoundComponent },
   { path: '**', redirectTo: '/not-found' }
 ];

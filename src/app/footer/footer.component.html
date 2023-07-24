@@ -44,10 +44,10 @@
                         </div>
                         <div class="footer-social-icon">
                             <span>Follow us</span>
-                            <i class="fa-brands fa-facebook" style="color: #a55f5f;"></i>
-                            <i class="fa-brands fa-whatsapp" style="color: #a55f5f;"></i>
-                            <i class="fa-brands fa-twitter" style="color: #a55f5f;"></i>
-                            <i class="fa-brands fa-instagram fa-flip-horizontal" style="color: #a55f5f;"></i>
+                            <i class="fa-brands fa-facebook" style="color: green;"></i>
+                            <i class="fa-brands fa-whatsapp" style="color: green;"></i>
+                            <i class="fa-brands fa-twitter" style="color: green;"></i>
+                            <i class="fa-brands fa-instagram fa-flip-horizontal" style="color: green;"></i>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                             <h3>Useful Links</h3>
                         </div>
                         <ul>
-                            
+
                             <li><a href="#">Home</a></li>
                             <li><a href="#">about</a></li>
                             <li><a href="#">services</a></li>
@@ -78,24 +78,14 @@
                             <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                         </div>
                         <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Email Address">
-                                <!-- <button><i class="fab fa-telegram-plane"></i></button> -->
-                            </form>
-                            
-                        </div>
-                        <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Phone number                                ">
-                                <!-- <button><i class="fab fa-telegram-plane"></i></button> -->
-                            </form>
-                            
-                        </div>
-                        <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="FullName">
-                                <!-- <button><i class="fab fa-telegram-plane"></i></button> -->
-                            </form>
+                          <form (ngSubmit)="onFormSubmit($event, email, phone, name, state, zipcode )">
+                            <input #email type="text" placeholder="Email Address" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" >
+                            <input #phone type="text" placeholder="Phone number" required pattern="[0-9]{10}">
+                            <input #name type="text" placeholder="Full Name" required pattern="[a-zA-Z\s]+">
+                            <input #state type="text" placeholder="State" required pattern="[a-zA-Z\s]+">
+                            <input #zipcode type="text" placeholder="Zip code" required pattern="[a-zA-Z\s]+">
+                            <button type="submit">Submit</button>
+                          </form>
                         </div>
                     </div>
                 </div>

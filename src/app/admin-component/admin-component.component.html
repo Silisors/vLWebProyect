@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+
 <body>
-
-    <header class="header"></header>
-
-    <section class="sidebar">
-        <div><h1>hola</h1></div>
-    </section>
-
-    <main class="main">
-    <div class="card"> </div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    
-</main>
+  <nav><app-nav-bar></app-nav-bar></nav>
+  <h1>   <strong>V&L dashboard</strong></h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12" *ngFor="let email of emails; let i=index">
+        <div class="card mb-3">
+          <div class="card-body">
+            <p class="card-text">   <strong>Name:</strong> {{ email.name }}</p>
+            <p class="card-text"> <strong> Email:</strong> {{ email.email }}</p>
+            <p class="card-text">   <strong> Zipcode:</strong> {{ email.zipcode }}</p>
+            <p class="card-text">  <strong>Phone:</strong> Phone: {{ email.phone }}</p>
+            <p class="card-text">  <strong>State:</strong>  {{ email.state }}</p>
+            <p class="card-text">  <strong> Date :</strong>  {{ email.dated }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-</html>

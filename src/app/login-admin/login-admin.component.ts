@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'auth.service';
 @Component({
   selector: 'app-login-admin',
   templateUrl: './login-admin.component.html',
@@ -10,12 +11,10 @@ export class LoginAdminComponent {
   password: string = '';
   invalidEmail: boolean = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private authService: AuthService) { } // Inyecta el servicio AuthService
 
   onLogin() {
-    // Código para validar la información de inicio de sesión
-    if (this.email === 'admin@admin.com' && this.password === 'demo123') {
-      // Si la validación es exitosa, redirige al usuario al panel de administración
+    if (this.authService.login(this.email, this.password)) {
       this.router.navigate(['adminPanel']);
     }
   }
@@ -24,5 +23,4 @@ export class LoginAdminComponent {
     const emailRegex = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
     this.invalidEmail = !emailRegex.test(this.email);
   }
-  
 }

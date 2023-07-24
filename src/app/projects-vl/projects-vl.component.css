@@ -1,9 +1,14 @@
 
 @media (min-width: 768px){
-  button{
-    left: 120px;
-    padding-right: 50px;
-    padding-left: 50px;
+  button {
+    padding-right: 200px;
+    padding-left: 100px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+  }
+  h4:hover {
+    color: green;
   }
 }
 
@@ -14,3 +19,4 @@
     padding-left: 50px;
   }
 }
+

@@ -15,23 +15,23 @@
     height: auto;
     overflow: hidden; /* Para limpiar el float */
   }
-  
+
   .image {
     width: 50%;
     float: left;
   }
-  
+
   .text {
     width: 50%;
     float: left;
     padding-left: 20px; /* Para agregar un poco de espacio entre la imagen y el texto */
   }
-    
+
   h5{
     color: green;
   }
   body{
-background-color: #7c9885;  
+background-color: #7c9885;
 }
 
 .dropdown-item{
@@ -49,7 +49,7 @@ nav{
   background-color: #ffffff;
   z-index: 9999;
 }
- 
+
 
 @media (min-width: 768px){
 

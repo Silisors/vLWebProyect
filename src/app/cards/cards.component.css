@@ -12,7 +12,7 @@ article {
     transition: all 0.4s ease-in-out;
     overflow: hidden;
   }
-  
+
   article a::after {
     position: absolute;
     inset-block: 0;
@@ -20,46 +20,46 @@ article {
     cursor: pointer;
     content: "";
   }
-  
+
   /* basic article elements styling */
   article h2 {
     margin: 0 0 18px 0;
-    font-family: "Bebas Neue", cursive;
+
     font-size: 1.9rem;
     letter-spacing: 0.06em;
     color: var(--title-color);
     transition: color 0.3s ease-out;
   }
-  
+
   figure {
     margin: 0;
     padding: 0;
     aspect-ratio: 16 / 9;
     overflow: hidden;
   }
-  
+
   article img {
     max-width: 100%;
     transform-origin: center;
     transform: scale(var(--img-scale));
     transition: transform 0.4s ease-in-out;
   }
-  
+
   .article-body {
     padding: 24px;
   }
-  
+
   article a {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    
+
   }
-  
+
   article a:focus {
     outline: 1px dotted ;
   }
-  
+
   article a .icon {
     min-width: 24px;
     width: 24px;
@@ -69,7 +69,7 @@ article {
     opacity: var(--link-icon-opacity);
     transition: all 0.3s;
   }
-  
+
   /* using the has() relational pseudo selector to update our custom properties */
   article:has(:hover, :focus) {
     --img-scale: 1.1;
@@ -78,27 +78,27 @@ article {
     --link-icon-opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
-  
-  
-  /************************ 
+
+
+  /************************
   Generic layout (demo looks)
   **************************/
-  
+
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
-  
+
   body {
     margin: 0;
     padding-top: 50px;
-    font-family: "Figtree", sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.2rem;
     line-height: 1.6rem;
     min-height: 50vh;
   }
-  
+
   .articles {
     display: grid;
     max-width: 1200px;
@@ -107,7 +107,7 @@ article {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 24px;
   }
-  
+
   @media screen and (max-width: 960px) {
     article {
       container: card/inline-size;
@@ -115,9 +115,9 @@ article {
     .article-body p {
       display: none;
     }
-    
+
   }
-  
+
   @container card (min-width: 380px) {
     .article-wrapper {
       display: grid;
@@ -138,14 +138,14 @@ article {
       object-fit: cover;
     }
   }
-  
+
   .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0); 
+    clip: rect(0 0 0 0);
     clip-path: inset(50%);
     height: 1px;
     overflow: hidden;
     position: absolute;
-    white-space: nowrap; 
+    white-space: nowrap;
     width: 1px;
   }
 
@@ -163,7 +163,7 @@ article {
   .btn-success {
     margin: 10px;
   }
-  
+
   .btn-success.mobile {
     display: block;
     margin: 10px auto;
@@ -173,7 +173,7 @@ article {
     border-radius: 5px;
     padding: 10px 20px;
   }
-  
+
   #button{
     padding-top: 10px;
     border-radius: 10px;
@@ -186,4 +186,10 @@ article {
   }
   .p3{
     padding-bottom: 10px;
+  }
+  #h22:hover{
+    color: green;
+  }
+  #h4sin:hover{
+    color: green;
   }
